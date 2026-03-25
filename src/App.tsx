@@ -235,23 +235,48 @@ export default function App() {
             className="bg-black-3 border border-white/10 p-8 md:p-12 mb-16 text-left relative overflow-hidden clip-diagonal"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-red/5 blur-[80px] pointer-events-none"></div>
-            <h3 className="font-bebas text-[32px] md:text-[40px] text-gold mb-6 relative z-10">Parola d'ordine: Inclusione</h3>
-            <div className="space-y-4 text-gray text-[16px] md:text-[18px] font-light leading-relaxed relative z-10">
-              <p>
-                La <strong className="text-white font-medium">ASD Bari Kombat</strong> crede fortemente che lo Sport debba essere accessibile a tutti, che nessuno debba avere impedimenti strutturali o sociali che ne impediscano lo svolgimento.
-              </p>
-              <p>
-                Per questo motivo la ASD Bari Kombat, sotto l'egida della <strong className="text-white font-medium">Federkombat (FSN)</strong> federazione nazionale di riferimento, ha iniziato un percorso supportato dalla stessa federazione, che nel gennaio 2022 ha firmato un protocollo d'intesa con il <strong className="text-white font-medium">Comitato Italiano Paralimpico (C.I.P)</strong>.
-              </p>
-              <p>
-                Obiettivo importante per la nostra ASD e per gli Sponsor, sarà la realizzazione di eventi periodici, con accesso gratuito ma con stretti protocolli organizzativi e certificati, che coinvolgeranno ragazzi portatori di Handicap siano essi fisici o psichici. Tutto sarà supportato da linee guida federali, con il coinvolgimento di tecnici federali appositamente formati ed iscritti alla nostra Federazione.
-              </p>
-              <p>
-                La scuola, ma soprattutto lo Sport deve essere in prima linea nel favorire l'integrazione di questi ragazzi nel tessuto sociale.
-              </p>
-              <p className="text-gold font-medium pt-2">
-                Gli Sponsor a tal proposito valorizzeranno gli eventi con la loro presenza; regaleranno giornate di sport a chi quotidianamente lotta per ricercare nel mondo un proprio spazio, regaleranno alle famiglie la gioia di trascorrere giornate all'insegna dell'unione e del Fairplay.
-              </p>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+              <div>
+                <h3 className="font-bebas text-[32px] md:text-[40px] text-gold mb-6">Parola d'ordine: Inclusione</h3>
+                <div className="space-y-4 text-gray text-[16px] md:text-[18px] font-light leading-relaxed">
+                  <p>
+                    La <strong className="text-white font-medium">ASD Bari Kombat</strong> crede fortemente che lo Sport debba essere accessibile a tutti, che nessuno debba avere impedimenti strutturali o sociali che ne impediscano lo svolgimento.
+                  </p>
+                  <p>
+                    Per questo motivo la ASD Bari Kombat, sotto l'egida della <strong className="text-white font-medium">Federkombat (FSN)</strong> federazione nazionale di riferimento, ha iniziato un percorso supportato dalla stessa federazione, che nel gennaio 2022 ha firmato un protocollo d'intesa con il <strong className="text-white font-medium">Comitato Italiano Paralimpico (C.I.P)</strong>.
+                  </p>
+                  <p>
+                    Obiettivo importante per la nostra ASD e per gli Sponsor, sarà la realizzazione di eventi periodici, con accesso gratuito ma con stretti protocolli organizzativi e certificati, che coinvolgeranno ragazzi portatori di Handicap siano essi fisici o psichici. Tutto sarà supportato da linee guida federali, con il coinvolgimento di tecnici federali appositamente formati ed iscritti alla nostra Federazione.
+                  </p>
+                  <p>
+                    La scuola, ma soprattutto lo Sport deve essere in prima linea nel favorire l'integrazione di questi ragazzi nel tessuto sociale.
+                  </p>
+                  <p className="text-gold font-medium pt-2">
+                    Gli Sponsor a tal proposito valorizzeranno gli eventi con la loro presenza; regaleranno giornate di sport a chi quotidianamente lotta per ricercare nel mondo un proprio spazio, regaleranno alle famiglie la gioia di trascorrere giornate all'insegna dell'unione e del Fairplay.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl shadow-red/5 group">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                >
+                  <source src="https://videos.pexels.com/video-files/35671222/35671222-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+                  <source src="https://videos.pexels.com/video-files/35671222/35671222-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                  <source src="https://videos.pexels.com/video-files/35671222/35671222-sd_640_360_30fps.mp4" type="video/mp4" />
+                  Il tuo browser non supporta il tag video.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-white/80 text-sm font-inter">
+                  <Heart size={16} className="text-red" />
+                  <span>Lo sport unisce, senza barriere.</span>
+                </div>
+              </div>
             </div>
           </motion.div>
 
