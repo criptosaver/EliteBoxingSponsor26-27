@@ -266,9 +266,7 @@ export default function App() {
                   playsInline
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 >
-                  <source src="https://videos.pexels.com/video-files/35671222/35671222-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-                  <source src="https://videos.pexels.com/video-files/35671222/35671222-hd_1920_1080_30fps.mp4" type="video/mp4" />
-                  <source src="https://videos.pexels.com/video-files/35671222/35671222-sd_640_360_30fps.mp4" type="video/mp4" />
+                  <source src="https://drive.google.com/uc?export=download&id=1_MNCKZyctxY1zjw2EqO_DPF0JRdvIPH6" type="video/mp4" />
                   Il tuo browser non supporta il tag video.
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
